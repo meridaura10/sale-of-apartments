@@ -44,9 +44,11 @@ function takeEmailAndPassword(event){
      Authorization.authWithEmailAndPassword(email, password)
     .then(token => {
 
+      if (token) {
         localStorage.setItem('auth', JSON.stringify(token))
         Apartments.createApartment(token)
         addBtnToHeader(token)
+      }
 
 
     })

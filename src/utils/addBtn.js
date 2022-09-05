@@ -7,13 +7,13 @@ export function addBtnToHeader(auth) {
     }
 }
 export function addButtonApartment(auth, selector,id) {
-    const element = document.querySelector(selector)
-    const htmlBtn = ` 
-    <div class="card-btn">
-        <button id=${id} class="mui-btn mui-btn--primary btn-change">змінити дінні</button>
-        <button id="remove" class="mui-btn mui-btn--danger">видалити</button>
-    </div>`
     if (auth) {
+        const element = document.querySelector(selector)
+        const htmlBtn = ` 
+        <div class="card-btn">
+            <button id=${id} class="mui-btn mui-btn--primary btn-change">змінити дінні</button>
+            <button id="remove" class="mui-btn mui-btn--danger">видалити</button>
+        </div>`
         element.insertAdjacentHTML('beforeend', htmlBtn)
     }
 }
