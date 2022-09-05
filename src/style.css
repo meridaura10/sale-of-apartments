@@ -1,0 +1,213 @@
+body,html{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(245, 245, 245);
+}
+/************************header*********************/
+ header {
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 2;
+ }
+ 
+ header ul.mui-list--inline {
+   margin-bottom: 0;
+ }
+ 
+ header a {
+   color: #fff;
+ }
+ 
+ header table {
+   width: 100%;
+ }
+ 
+ /****************************************************/
+#btn-authorization{
+  margin-left: 30px;
+}
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+#btn-exit{
+  margin-left: 5px;
+}
+#add-apartment{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+}
+#input-img-addApartment{
+  display: none;
+}
+#btn-img{
+  border: 3px rgb(0, 138, 7) solid;
+  border-radius: 20px;
+  font-size: 16px;
+  background: wheat;
+  padding: 8px 12px;
+}
+#btn-img:active{
+  border-color: rgb(0, 255, 13);
+  transition: .1s;
+  background-color: rgb(248, 214, 150);
+}
+.preview{
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  border: 3px solid rgb(255, 0, 149);
+}
+.preview-img{
+  margin: 10px 10px;
+  width: 200px;
+  height: 180px;
+}
+/*******************slider***********************************/
+.apartment__slider {  
+  border-radius: inherit;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.apartment__slider:hover .slider-next {
+  background-color: rgba(255, 255, 255, .3);
+  width: 12%;
+}
+
+.apartment__slider:hover .slider-prev {
+  background-color: rgba(255, 255, 255, .3);
+  width: 12%;
+}
+.apartment__slider-line {
+  display: flex;
+  background: orange;
+  position: relative;
+  left: 0;
+  transition: all ease .7s;
+}
+.slider-next{
+  transition: .7s;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 15%;
+  right: 0px;
+  border: none;
+  background-color: rgba(255, 255, 255, .1);
+}
+.slider-prev{
+  transition: .7s;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 15%;
+  left: 0px;
+  border: none;
+  background-color: rgba(255, 255, 255, .1);  
+}
+/*****************************************************************/
+/* aprartments */
+.apartments__container{
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px auto;
+}
+.apratments-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 30px;
+}
+.apartment{
+  border-radius: 30px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid transparent;
+  transition: .5s;
+}
+.apartment:hover{
+  border: 2px solid rgb(230, 225, 225);
+  background-color: #fff;
+}
+.apartment__content{
+  padding-top: 10px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-size: 24px;
+}
+.card-text{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  transition: .5s;
+  align-items: center;
+}
+.card-text:hover{
+  border: 1px solid black;
+  padding: 0px 7px;
+  background-color: white;
+}
+.card-btn{
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+}
+.card-img{
+  min-width: 600px;
+  min-height: 400px;
+  max-width: 600px;
+  max-height: 400px;
+}
+.apartment__img{
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+#remove{
+  border-bottom-right-radius: 20px;
+}
+.error-text-btn{
+  width: 365px;
+  font-size: 23px;
+  text-align: center;
+  font-weight: 600;
+}
+/*sort*/
+.sort{
+  margin-bottom: 50px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+}
+.sort__text{
+  font-size: 24px;
+  font-weight: 700;
+
+}
+.text-price{
+  display: flex;
+}
+.currency{
+  padding-left: 5px;
+}
+.dateChangeText{
+  text-align: left;
+}
+.apartment-dateChange{
+  text-align: right;
+}
+.dateChange{
+  margin-top: 50px;
+  padding: 10px 15px;
+}
